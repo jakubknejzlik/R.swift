@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
   spec.tvos.deployment_target    = '9.0'
   spec.osx.deployment_target    = '10.11'
 
-  spec.dependency "R.swift.Library", git: => "https://github.com/jakubknejzlik/R.swift.Library.git"
+  spec.dependency "R.swift.Library"
 
   spec.preserve_paths = "rswift"
 

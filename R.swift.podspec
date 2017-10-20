@@ -21,13 +21,13 @@ Pod::Spec.new do |spec|
   spec.social_media_url   = "https://twitter.com/mac_cain13"
 
   spec.requires_arc = true
-  spec.source = { :http => "https://github.com/mac-cain13/R.swift/releases/download/v#{spec.version}/rswift-#{spec.version}.zip" }
+  spec.source = { :git => "https://github.com/jakubknejzlik/R.swift.Library.git"}
 
   spec.ios.deployment_target     = '8.0'
   spec.tvos.deployment_target    = '9.0'
   spec.osx.deployment_target    = '10.11'
 
-  spec.dependency "R.swift.Library", "~> 4.0.0"
+  spec.dependency "R.swift.Library", git: => "https://github.com/jakubknejzlik/R.swift.Library.git"
 
   spec.preserve_paths = "rswift"
 
